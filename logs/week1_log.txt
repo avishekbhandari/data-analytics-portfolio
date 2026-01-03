@@ -1,1 +1,24 @@
+Week 1 – Day 1
+
+Date:
+Topics Studied:
+- SQL SELECT
+- WHERE
+- GROUP BY
+- JOIN
+
+What I Practiced:
+- 
+
+What Was Easy:
+- 
+
+What Was Difficult:
+- 
+
+Key Learning:
+- 
+
+Questions / Doubts:
+- 
 
