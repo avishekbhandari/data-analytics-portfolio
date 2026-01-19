@@ -29,8 +29,7 @@ SELECT * FROM CUSTOMER WHERE Address IS NOT NULL; -- Extract all records from th
 GROUP BY clause groups the rows that have the same value into summary rows. It is often used with aggregate functions to group the result set by one or more fields.
 Any field that appears in the SELECT clause and is not aggregated must also appear in the GROUP BY clause.
 
-SELECT COUNT(CustomerID), Country FROM Customer GROUP BY Country ORDER BY COUNT(CustomerID) DESC; -- this query has GROUP the table by the field Country and has counted
-how many times each country name has repeated using the COUNT aggregate function and also the result is ordered in descending order. 
+SELECT COUNT(CustomerID), Country FROM Customer GROUP BY Country ORDER BY COUNT(CustomerID) DESC; -- this query has GROUP the table by the field Country and has counted how many times each country name has repeated using the COUNT aggregate function and also the result is ordered in descending order.  (Identifies countries with the highest customer base, helping the business prioritize regional marketing and expansion strategies.)
 
 SELECT year, COUNT(*) AS Count FROM Sales GROUP BY year; -- this counts the number of entries for each year
 
@@ -42,7 +41,7 @@ JOIN clause is used to combine rows from two or more tables, based on a related 
 INNER JOIN returns records that have a matching value in both tables.
 
 SELECT ProductID, ProductName, CategoryName FROM Products INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID; -- this query joins the Category table with the Product table. This helps us to know the category of each product. The INNER JOIN keyword returns only rows with a match in both tables. Which means that if we have a product with no CategoryID, or with a CategoryID that is not present in the Categories table, that record would not be returned in the result.
-
+ 
 -OUTER JOIN
 There are three types of OUTER JOIN. They are LEFT JOIN, RIGHT JOIN and FULL JOIN.
 
